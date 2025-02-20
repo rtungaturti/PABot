@@ -1,6 +1,19 @@
 pipeline {
     agent any
-
+stages {
+        stage('Verify Environment') {
+            steps {
+                script {
+                    sh '''
+                        python --version
+                        pip --version
+                        robot --version
+                        pabot --version
+                        chromedriver --version
+                    '''
+                }
+            }
+        }
     stages {
         stage('Checkout') {
             steps {
