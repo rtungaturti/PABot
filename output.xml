@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 7.2.2 (Python 3.12.5 on win32)" generated="2025-02-20T17:15:26.931998" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="TS 1" source="D:\20-02-2025\tests\TS_1.robot">
+<test id="s1-s1-t1" name="Google Search Part 1" line="8">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Starting Google Search Part 1</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-02-20T17:15:14.981993" elapsed="0.000000"/>
+</kw>
+<kw name="Google Search" owner="google_search">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:15:14.981993" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-20T17:15:14.981993" elapsed="4.024765"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:15:19.008266" level="INFO">Typing text 'pytest' into text field 'name:q'.</msg>
+<arg>name:q</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-20T17:15:19.006758" elapsed="0.164701"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:15:19.175073" level="INFO">Sending key(s) ('\\13',) to name:q element.</msg>
+<msg time="2025-02-20T17:15:19.510282" level="INFO">Sending keys \13</msg>
+<arg>name:q</arg>
+<arg>\\13</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-02-20T17:15:19.171459" elapsed="0.386653"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${SEARCH_TERM}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-20T17:15:19.559111" elapsed="0.028012"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-20T17:15:19.587123" elapsed="2.278577"/>
+</kw>
+<status status="PASS" start="2025-02-20T17:15:14.981993" elapsed="6.883707"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Completed Google Search Part 1</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-02-20T17:15:21.865700" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2025-02-20T17:15:14.981993" elapsed="6.883707"/>
+</test>
+<status status="PASS" start="2025-02-20T17:15:14.615000" elapsed="6.884000"/>
+</suite>
+<suite id="s1-s2" name="TS 2" source="D:\20-02-2025\tests\TS_2.robot">
+<test id="s1-s2-t1" name="Google Search Part 2" line="8">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Starting Google Search Part 2</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-02-20T17:15:14.981993" elapsed="0.000000"/>
+</kw>
+<kw name="Google Search" owner="google_search">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:15:14.981993" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-20T17:15:14.981993" elapsed="4.907133"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:15:19.891710" level="INFO">Typing text 'selenium example' into text field 'name:q'.</msg>
+<arg>name:q</arg>
+<arg>${SEARCH_TERM}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-20T17:15:19.891710" elapsed="0.151819"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-02-20T17:15:20.044827" level="INFO">Sending key(s) ('\\13',) to name:q element.</msg>
+<msg time="2025-02-20T17:15:20.344187" level="INFO">Sending keys \13</msg>
+<arg>name:q</arg>
+<arg>\\13</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-02-20T17:15:20.044147" elapsed="0.322192"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>${SEARCH_TERM}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-02-20T17:15:20.366339" elapsed="0.018196"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-02-20T17:15:20.384535" elapsed="2.145597"/>
+</kw>
+<status status="PASS" start="2025-02-20T17:15:14.981993" elapsed="7.549362"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Completed Google Search Part 2</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-02-20T17:15:22.531355" elapsed="0.000905"/>
+</kw>
+<status status="PASS" start="2025-02-20T17:15:14.981993" elapsed="7.550267"/>
+</test>
+<status status="PASS" start="2025-02-20T17:15:14.632330" elapsed="7.899930"/>
+</suite>
+<doc>[https://pabot.org/?ref=log|Pabot] result from 2 executions.</doc>
+<status status="PASS" start="2025-02-20T17:15:14.598000" elapsed="7.934000"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Suites" id="s1" pass="2" fail="0" skip="0">Suites</stat>
+<stat name="TS 1" id="s1-s1" pass="1" fail="0" skip="0">Suites.TS 1</stat>
+<stat name="TS 2" id="s1-s2" pass="1" fail="0" skip="0">Suites.TS 2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

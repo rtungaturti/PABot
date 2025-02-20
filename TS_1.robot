@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    resources/google_search.resource
+Resource     google_search.resource
 
 *** Variables ***
 ${SEARCH_TERM}    pytest
