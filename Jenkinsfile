@@ -31,9 +31,7 @@ pipeline {
         stage('Publish Reports') {
             steps {
                 // Publish Robot Framework test results
-                script {
-                    robot 'results/'
-                }
+                robot 'results/'
             }
         }
     }
