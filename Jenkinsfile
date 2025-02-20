@@ -1,6 +1,6 @@
 pipeline {
     agent any
-stages {
+    stages {
         stage('Verify Environment') {
             steps {
                 script {
@@ -14,7 +14,6 @@ stages {
                 }
             }
         }
-    stages {
         stage('Checkout') {
             steps {
                 // Checkout code from your repository
@@ -25,7 +24,6 @@ stages {
                 }
             }
         }
-        
         stage('Parallel Tests') {
             parallel {
                 stage('TS_1') {
@@ -50,7 +48,6 @@ stages {
                 }
             }
         }
-        
         stage('Publish Reports') {
             steps {
                 // Publish Robot Framework test results
@@ -60,7 +57,6 @@ stages {
             }
         }
     }
-
     post {
         always {
             // Clean up workspace after the build
